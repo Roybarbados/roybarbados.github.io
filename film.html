@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Roy Barbados - Film</title>
+
+  <!-- Bootstrap & Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>﻿
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+  body {
+      position: relative;
+  }
+
+  </style>
+
+</head>
+
+<body data-spy="scroll" data-target="#filmScrollspy" data-offset="20">
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="dropup">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photography
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="community.html">Community</a></li>
+            <li><a href="35mm.html">35mm</a></li>
+            <!-- <li><a href="portraits.html">Portraits</a></li> -->
+          </ul>
+        </li>
+        <li><a href="https://roybarbados.bandcamp.com/" target="_blank">Music</a></li>
+        <li class="dropup">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Film
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="community.html">Community</a></li>
+            <li><a href="film.html#metamorphosis">Metamorphosis</a></li>
+            <li><a href="film.html#second-chance">Second Chance</a></li>
+            <li><a href="film.html#sounds-of-war">Sounds of War</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <div class="social-media">
+            <a href="https://www.facebook.com/roybarbadoz"><img src="img/icons/facebook.png"/></a>
+            <a href="https://www.instagram.com/roybarbados/"><img src="img/icons/instagram.png"/></a>
+            <a href="https://soundcloud.com/roybarbadoz"><img src="img/icons/soundcloud.png"/></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+ <main class="container">
+   <h1 class="text-center">Film</h1>
+   <div class="row">
+     <div class="col-md-8 col-md-offset-2">
+       <div id="metamorphosis">
+         <h3 class="text-center">Metamorphosis</h3>
+         <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px;">
+           <video controls="controls" class="image-responsive"
+            name="Video Name" src="video/film/metamorphosis.mov">
+          </video>
+        </div>
+       </div>
+       <div id="second-chance" style="margin-top:20px;">
+         <h3 class="text-center">Second Chance</h3>
+         <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px;">
+           <video controls="controls" class="image-responsive"
+            name="Video Name" src="video/film/second_chance.mp4">
+          </video>
+        </div>
+       </div>
+       <div id="sounds-of-war" style="margin-top:20px; margin-bottom:80px;">
+         <h3 class="text-center">Sounds of War</h3>
+           <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px;">
+             <video controls="controls" class="image-responsive"
+              name="Video Name" src="video/film/sounds_of_war.mov">
+            </video>
+          </div>
+       </div>
+     </div>
+     <nav class="col-md-2" id="filmScrollspy">
+       <ul class="nav nav-pills nav-stacked" style="margin-top:136px; margin-left:50px;">
+         <li><a href="#metamorphosis">Metamorphosis</a></li>
+         <li><a href="#second-chance">Second Chance</a></li>
+         <li><a href="#sounds-of-war">Sounds of War</a></li>
+       </ul>
+     </nav>
+   </div>
+ </main>
+
+</body>
+</html>
