@@ -4,61 +4,47 @@
   <!--  Meta  -->
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Roy Barbados</title>
+  <title>Roy Barbados - Community</title>
 
   <!-- Bootstrap & Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>﻿
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
   <!--  Styles  -->
   <link rel="stylesheet" href="styles.css">
 
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script>
+  $(document).ready(function () {
+    var video = document.getElementById('video');
+    // video.addEventListener('click',function(){
+    //     video.play();
+    //     window.location.href = 'http://www.google.com';
+    // },false);
+    $('#enter').click(function () {
+      //$('#enter').get(0).play();
+      window.location.href = 'homepage.html';
+    });
+  });
+  </script>
+
+  <style>
+    body {
+      margin-top: -20px;
+    }
+  </style>
+
+
 </head>
-
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li class="dropup">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photography
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="community.html">Community</a></li>
-            <li><a href="35mm.html">35mm</a></li>
-            <!-- <li><a href="portraits.html">Portraits</a></li> -->
-          </ul>
-        </li>
-        <li><a href="https://roybarbados.bandcamp.com/" target="_blank">Music</a></li>
-        <li class="dropup">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Film
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="community.html">Community</a></li>
-            <li><a href="film.html#metamorphosis">Metamorphosis</a></li>
-            <li><a href="film.html#second-chance">Second Chance</a></li>
-            <li><a href="film.html#sounds-of-war">Sounds of War</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html">About</a></li>
-        <li>
-          <div class="social-media">
-            <a href="https://www.facebook.com/roybarbadoz"><img src="img/icons/facebook.png"/></a>
-            <a href="https://www.instagram.com/roybarbados/"><img src="img/icons/instagram.png"/></a>
-            <a href="https://soundcloud.com/roybarbadoz"><img src="img/icons/soundcloud.png"/></a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <main class="container">
-    <h1 class="text-center">Roy Barbados</h1>
-    <div class="row">
-    </div>
-  </main>
+  <video class="img-responsive center-block" id="enter" width="100%" height="100%"
+       name="Video Name" src="vid/enter.mov"></video>
 
 </body>
 </html>

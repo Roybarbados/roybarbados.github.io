@@ -14,6 +14,18 @@
   <!--  Styles  -->
   <link rel="stylesheet" href="styles.css">
 
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- font -->
+  <link href='https://fonts.googleapis.com/css?family=Rokkitt-bold' rel='stylesheet'>
+
+  <style>
+  body {
+      font-family: 'Rokkit-bold';
+  }
+  </style>
+
 </head>
 
 <body>
@@ -21,7 +33,7 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav">
         <li class="dropup">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photography
+          <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Photography
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
@@ -30,9 +42,9 @@
             <!-- <li><a href="portraits.html">Portraits</a></li> -->
           </ul>
         </li>
-        <li><a href="https://roybarbados.bandcamp.com/" target="_blank">Music</a></li>
+        <li><a href="https://roybarbados.bandcamp.com/" class="menu-item" target="_blank">Music</a></li>
         <li class="dropup">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Film
+          <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Film
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
@@ -40,14 +52,15 @@
             <li><a href="film.html#metamorphosis">Metamorphosis</a></li>
             <li><a href="film.html#second-chance">Second Chance</a></li>
             <li><a href="film.html#sounds-of-war">Sounds of War</a></li>
+            <li><a href="film.html#carnival">The Carnival</a></li>
           </ul>
         </li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="menu-item">About</a></li>
         <li>
           <div class="social-media">
-            <a href="https://www.facebook.com/roybarbadoz"><img src="img/icons/facebook.png"/></a>
-            <a href="https://www.instagram.com/roybarbados/"><img src="img/icons/instagram.png"/></a>
-            <a href="https://soundcloud.com/roybarbadoz"><img src="img/icons/soundcloud.png"/></a>
+            <a href="https://www.facebook.com/roybarbadoz" target="_blank"><i class="fa fa-facebook" style="color:white; margin:10px; font-size:20px;"></i></a>
+            <a href="https://www.instagram.com/roybarbados/" target="_blank"><i class="fa fa-instagram" style="color:white; margin:10px; font-size:20px;"></i></a>
+            <a href="https://soundcloud.com/roybarbadoz" target="_blank"><i class="fa fa-soundcloud" style="color:white; margin:10px; font-size:20px;"></i></a>
           </div>
         </li>
       </ul>
@@ -59,9 +72,8 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div id="community">
-          <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px;">
-            <video controls="controls" class="image-responsive"name="Video Name" src="video/community/community.mov"></video>
-          </div>
+          <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px; margin-bottom:20px;">
+            <iframe class="img-responsive" width="560" height="315" src="https://www.youtube.com/embed/3AtWmm4RE7g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>

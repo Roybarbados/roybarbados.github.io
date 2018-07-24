@@ -4,7 +4,7 @@
   <!--  Meta  -->
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Roy Barbados - Film</title>
+  <title>Roy Barbados</title>
 
   <!-- Bootstrap & Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>﻿
@@ -19,17 +19,15 @@
 
   <!-- font -->
   <link href='https://fonts.googleapis.com/css?family=Rokkitt-bold' rel='stylesheet'>
-
   <style>
-  body {
-      position: relative;
-      font-family: 'Rokkit-bold';
-  }
+    body {
+        font-family: 'Rokkit-bold';
+    }
   </style>
 
 </head>
 
-<body data-spy="scroll" data-target="#filmScrollspy" data-offset="20">
+<body>
   <nav class="navbar navbar-inverse navbar-fixed-bottom">
     <div class="container-fluid">
       <ul class="nav navbar-nav">
@@ -68,46 +66,18 @@
     </div>
   </nav>
 
- <main class="container">
-   <h1 class="text-center">Film</h1>
-   <div class="row">
-     <div class="col-md-8 col-md-offset-2">
-       <div id="metamorphosis">
-         <h3 class="text-center">Metamorphosis</h3>
-         <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px;">
-           <iframe src="https://player.vimeo.com/video/148102254" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/148102254">Metamorphosis</a> from <a href="https://vimeo.com/user25856586">Roy Barbados</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-        </div>
-       </div>
-       <div id="second-chance" style="margin-top:20px;">
-         <h3 class="text-center">Second Chance</h3>
-         <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px;">
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/xzcNxC7TjfY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-         </div>
-       </div>
-       <div id="sounds-of-war" style="margin-top:20px;">
-         <h3 class="text-center">Sounds of War</h3>
-           <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px;">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/w4OtaZAtQHU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-       </div>
-       <div id="carnival" style="margin-top:20px; margin-bottom:80px;">
-         <h3 class="text-center">The Carnival</h3>
-           <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px;">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/XnPH6Et3uYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-       </div>
-     </div>
-     <nav class="col-md-2" id="filmScrollspy">
-       <ul class="nav nav-pills nav-stacked" style="margin-top:136px; margin-left:50px;">
-         <li class="text-center"><a href="#metamorphosis">Metamorphosis</a></li>
-         <li class="text-center"><a href="#second-chance">Second Chance</a></li>
-         <li class="text-center"><a href="#sounds-of-war">Sounds of War</a></li>
-         <li class="text-center"><a href="#carnival">The Carnival</a></li>
-       </ul>
-     </nav>
-   </div>
- </main>
+  <main class="container-fluid">
+    <img class="center-block img-responsive" src="img/header.png" style="max-width: 700px;"/>
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-lg-12">
+        <!-- <img class="img-responsive center-block"src="img/gifhead.gif" style="height:500px; width:100%;"/> -->
+        <video class="center-block" controls autoplay loop style="min-width:100%;">
+           <source src="vid/gifhead.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>
