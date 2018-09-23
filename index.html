@@ -22,14 +22,16 @@
 
   <script>
   $(document).ready(function () {
-    var video = document.getElementById('video');
+    // var video = document.getElementById('video');
     // video.addEventListener('click',function(){
     //     video.play();
     //     window.location.href = 'http://www.google.com';
     // },false);
-    $('#enter').click(function () {
-      //$('#enter').get(0).play();
-      window.location.href = 'homepage.html';
+  $('#enter').click(function () {
+      $('#enter').get(0).play();
+      setTimeout(function() {
+        window.location.href = 'homepage.html';
+      },1500);
     });
   });
   </script>
