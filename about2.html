@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Roy Barbados - About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap & jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="styles.css" /> -->
+
+
+  <style>
+    @font-face {
+      font-family: belli;
+      src: url('img/font/belli.ttf');
+    }
+
+    body {
+      font-family: 'belli', sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+    }
+
+    #nav-list {
+      padding-top: 10px;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #nav-list li {
+      display: inline;
+      font-size: 20pt;
+    }
+
+    #nav-list li a {
+      text-decoration: none;
+      color: rgb(13, 164, 175);
+    }
+
+    /* Center dropup menu */
+    .dropdown-menu {
+      left: 50%;
+      right: auto;
+      text-align: center;
+      transform: translate(-50%, 0);
+    }
+
+    /* Dropup on hover rather than click */
+    ul#nav-list li.dropup:hover>ul.dropdown-menu {
+      display: block;
+    }
+
+    /* Social media links */
+    #social-media a {
+      text-decoration: none;
+      color: rgb(13, 164, 175);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    /* Header styling */
+    #header {
+      text-align: center;
+    }
+
+    #header-img {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      color: rgb(13, 164, 175);
+      font-size: 20px;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+    }
+
+    #about-img {
+      height: 100vh;
+      width: auto;
+    }
+
+    #main-desc {
+      align-self: center;
+    }
+
+    #email {
+      text-decoration: none;
+      color: rgb(13, 164, 175);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <img id="about-img" src="img/roy.jpg" alt="Roy Barbados" />
+    <div id="main-desc">
+      <p>Capturing and creating film, photography and music.</p>
+      <br>
+      <p>Roy creates visual soundscapes reflecting on the personal, the political and the
+        ridiculous.</p>
+      <br>
+      <br>
+      <a id="email" href="mailto:sphpromotions@gmail.com">SPHPROMOTIONS@GMAIL.COM</a>
+    </div>
+  </main>
+  <nav>
+    <ul id="nav-list">
+      <li class="dropup">
+        <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Film
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="community.html">Community</a></li>
+          <li><a href="film.html#metamorphosis">Metamorphosis</a></li>
+          <li><a href="film.html#second-chance">Second Chance</a></li>
+          <li><a href="film.html#sounds-of-war">Sounds of War</a></li>
+          <li><a href="film.html#carnival">The Carnival</a></li>
+        </ul>
+      </li>
+      <li class="dropup">
+        <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Photography
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="community.html">Community</a></li>
+          <li><a href="35mm.html">35mm</a></li>
+          <!-- <li><a href="portraits.html">Portraits</a></li> -->
+        </ul>
+      </li>
+      <li><a href="https://roybarbados.bandcamp.com/" class="menu-item" target="_blank">Music</a></li>
+      <li><a href="about.html" class="menu-item">About</a></li>
+      <li>
+        <div id="social-media">
+          <a href="https://www.facebook.com/roybarbadoz" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/roybarbados/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://soundcloud.com/roybarbadoz" target="_blank"><i class="fa fa-soundcloud"></i></a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+</html>
