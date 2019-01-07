@@ -1,88 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <!--  Meta  -->
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Roy Barbados - About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap & Javascript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>﻿
+  <!-- Bootstrap & jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-  <!--  Styles  -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- font awesome -->
+  <!-- Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- font -->
-  <link href='https://fonts.googleapis.com/css?family=Rokkitt-bold' rel='stylesheet'>
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="styles.css" /> -->
+
 
   <style>
-  body {
-      font-family: 'Rokkit-bold';
-  }
-  </style>
+    @font-face {
+      font-family: belli;
+      src: url('img/font/belli.ttf');
+    }
 
+    body {
+      font-family: 'belli', sans-serif;
+    }
+
+    main {
+      color: rgb(13, 164, 175);
+      font-size: 20px;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+    }
+    #homeButton {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+    }
+
+    #about-img {
+      height: 100vh;
+      width: auto;
+    }
+
+    #main-desc {
+      align-self: center;
+    }
+
+    #email {
+      text-decoration: none;
+      color: rgb(13, 164, 175);
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li class="dropup">
-          <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Photography
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="community.html">Community</a></li>
-            <li><a href="35mm.html">35mm</a></li>
-            <!-- <li><a href="portraits.html">Portraits</a></li> -->
-          </ul>
-        </li>
-        <li><a href="https://roybarbados.bandcamp.com/" class="menu-item" target="_blank">Music</a></li>
-        <li class="dropup">
-          <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Film
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="community.html">Community</a></li>
-            <li><a href="film.html#metamorphosis">Metamorphosis</a></li>
-            <li><a href="film.html#second-chance">Second Chance</a></li>
-            <li><a href="film.html#sounds-of-war">Sounds of War</a></li>
-            <li><a href="film.html#carnival">The Carnival</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html" class="menu-item">About</a></li>
-        <li>
-          <div class="social-media">
-            <a href="https://www.facebook.com/roybarbadoz" target="_blank"><i class="fa fa-facebook" style="color:white; margin:10px; font-size:20px;"></i></a>
-            <a href="https://www.instagram.com/roybarbados/" target="_blank"><i class="fa fa-instagram" style="color:white; margin:10px; font-size:20px;"></i></a>
-            <a href="https://soundcloud.com/roybarbadoz" target="_blank"><i class="fa fa-soundcloud" style="color:white; margin:10px; font-size:20px;"></i></a>
-          </div>
-        </li>
-      </ul>
+  <main>
+    <div id="homeButton">
+        <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
     </div>
-  </nav>
-
-  <main class="container">
-    <h1 class="text-center">About</h1>
-    <div class="row" style="margin-top:40px; margin-bottom:80px;">
-      <div class="col-md-6 col-md-offset-1">
-        <img class="img-responsive" src="img/roy.jpg"/>
-      </div>
-      <div class="col-md-4">
-        <h3 class="text-center">Roy Barbados</h3>
-        <br>
-        <p class="text-center">Creating, capturing and combining film, photography and music.</p>
-        <br>
-        <p class="text-center">Roy creates visual soundscapes reflecting on the personal, the political and the ridiculous.</p>
-        <br><br>
-      </div>
+    <img id="about-img" src="img/roy.jpg" alt="Roy Barbados" />
+    <div id="main-desc">
+      <p>Capturing and creating film, photography and music.</p>
+      <br>
+      <p>Roy creates visual soundscapes reflecting on the personal, the political and the
+        ridiculous.</p>
+      <br>
+      <br>
+      <a id="email" href="mailto:sphpromotions@gmail.com">
+        <button type="button" class="btn btn-primary" style="font-size: 23px; background: rgb(13, 164, 175);">
+          <i class="fa fa-envelope"></i> EMAIL ROY
+        </button>
+      </a>
     </div>
   </main>
-
 </body>
+
 </html>

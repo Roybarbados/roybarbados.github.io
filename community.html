@@ -21,148 +21,119 @@
   <link href='https://fonts.googleapis.com/css?family=Rokkitt-bold' rel='stylesheet'>
 
   <style>
-  body {
-      font-family: 'Rokkit-bold';
-  }
+    @font-face {
+      font-family: belli;
+      src: url('img/font/belli.ttf');
+    }
+    body {
+      font-family: 'belli', sans-serif;
+      margin-top: 0;
+    }
+    #header {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    #title {
+      color: salmon;
+      text-align: center;
+      font-size: 50px;
+      grid-column-start: 2;
+    }
+    #homeButton {
+      grid-column-start: 3;
+      margin-left: auto;
+    }
+
+    #community-text {
+      max-width: 800px;
+      font-size: 25px;
+      text-align: center;
+      left: 50%;
+      margin: -40px auto;
+    }
+    #community {
+      max-width: 1000px;
+      width: 70%;
+      margin: 0 auto;
+    }
+    #photo-flex  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+    .photo {
+      max-width: 1000px;
+      margin-top: 50px
+    }
+    .caption {
+      margin-top: 10px;
+      font-size: 23px;
+    }
+    @media (min-width: 468px) {
+      #page1 {
+        height: 100vh;
+      }
+    }
+    @media (max-width: 992px) {
+      .photo {
+        max-width: 75%;
+        height: auto;
+      }
+    }
+
   </style>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li class="dropup">
-          <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Photography
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="community.html">Community</a></li>
-            <li><a href="35mm.html">35mm</a></li>
-            <!-- <li><a href="portraits.html">Portraits</a></li> -->
-          </ul>
-        </li>
-        <li><a href="https://roybarbados.bandcamp.com/" class="menu-item" target="_blank">Music</a></li>
-        <li class="dropup">
-          <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Film
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="community.html">Community</a></li>
-            <li><a href="film.html#metamorphosis">Metamorphosis</a></li>
-            <li><a href="film.html#second-chance">Second Chance</a></li>
-            <li><a href="film.html#sounds-of-war">Sounds of War</a></li>
-            <li><a href="film.html#carnival">The Carnival</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html" class="menu-item">About</a></li>
-        <li>
-          <div class="social-media">
-            <a href="https://www.facebook.com/roybarbadoz" target="_blank"><i class="fa fa-facebook" style="color:white; margin:10px; font-size:20px;"></i></a>
-            <a href="https://www.instagram.com/roybarbados/" target="_blank"><i class="fa fa-instagram" style="color:white; margin:10px; font-size:20px;"></i></a>
-            <a href="https://soundcloud.com/roybarbadoz" target="_blank"><i class="fa fa-soundcloud" style="color:white; margin:10px; font-size:20px;"></i></a>
-          </div>
-        </li>
-      </ul>
+  <main>
+    <div id="page1">
+      <div id="header">
+        <h1 class="text-center" id="title">Community</h1>
+        <div id="homeButton">
+          <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
+        </div>
+      </div>
+      <div id="community-text">
+        <p>Community is about capturing and documenting communities, specifically groups of young adults, in outwardly aggressive scenarios, usually involving themes of sex and depravity. Set out to capture how particular communities view themselves as part of a collective combining the candid style of documentary with an aggressive stylistic undertones.</p>
+        <p>The work is conceptually ambitious with the images being shot forcefully to encapsulate the dilemmas and angst of young adult life and the trails and tribulations that accompany the demographic. This conceptual drive has helped shape the sound art piece using primal urges as the basis for the video and building upon this instinct with cognitive colours and movements.</p>
+      </div>
     </div>
-  </nav>
-
-  <main class="container">
-    <h1 class="text-center">Community</h1>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+    <div id=#page2>
+      <div id="photo-flex">
+        <img class="photo" src="./img/Community/2 Roy.jpg" alt="Roy">
+        <p class="caption">Roy</p>
+        <img class="photo" src="./img/Community/3 Nathan.jpg" alt="Nathan">
+        <p class="caption">Nathan</p>
+        <img class="photo" src="./img/Community/4 Rup and Dan.jpg" alt="Rup and Dan">
+        <p class="caption">Rup and Dan</p>
+        <img class="photo" src="./img/Community/5 Ruby and Georgia.jpg" alt="Ruby and Georgia">
+        <p class="caption">Ruby and Georgia</p>
+        <img class="photo" src="./img/Community/6 Nip.jpg" alt="Nip">
+        <p class="caption">Nip</p>
+        <img class="photo" src="./img/Community/7 Rupert.jpg" alt="Rupert">
+        <p class="caption">Rupert</p>
+        <img class="photo" src="./img/Community/8 Nathan.jpg" alt="Nathan">
+        <p class="caption">Nathan</p>
+        <img class="photo" src="./img/Community/9 Alex.jpg" alt="Alex">
+        <p class="caption">Alex</p>
+        <img class="photo" src="./img/Community/10 Hamez.jpg" alt="Hamez">
+        <p class="caption">Hamez</p>
+        <img class="photo" src="./img/Community/11 Brad.jpg" alt="Brad">
+        <p class="caption">Brad</p>
+        <img class="photo" src="./img/Community/12 Tdog.jpg" alt="Tdog">
+        <p class="caption">Tdog</p>
+        <img class="photo" src="./img/Community/13 The Gang.jpg" alt="The Gang">
+        <p class="caption">The Gang</p>
         <div id="community">
-          <div align="center" class="embed-responsive embed-responsive-16by9" style="margin-top:20px; margin-bottom:20px;">
+          <div class="embed-responsive embed-responsive-16by9" style="margin-bottom:20px; margin-top: 50px;">
             <iframe class="img-responsive" width="560" height="315" src="https://www.youtube.com/embed/3AtWmm4RE7g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top:40px;">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/1.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/2.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/3.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/4.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/5.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/6.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/7.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/8.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/9.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/10.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/11.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/12.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/13.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/14.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/15.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <img class="img-responsive community-img" src="img/photography/community/16.jpg"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3" style="margin-bottom:80px;">
-        <img class="img-responsive community-img" src="img/photography/community/17.jpg"/>
-      </div>
-    </div>
   </main>
-
 </body>
 </html>

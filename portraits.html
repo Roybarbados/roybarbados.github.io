@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Roy Barbados - Portraits</title>
+
+  <!-- Bootstrap & Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>﻿
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- font -->
+  <link href='https://fonts.googleapis.com/css?family=Rokkitt-bold' rel='stylesheet'>
+
+  <style>
+    @font-face {
+      font-family: belli;
+      src: url('img/font/belli.ttf');
+    }
+    body {
+      font-family: 'belli', sans-serif;
+      margin-top: 0;
+    }
+    #header {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    #title {
+      color: salmon;
+      text-align: center;
+      font-size: 50px;
+      grid-column-start: 2;
+    }
+    #homeButton {
+      grid-column-start: 3;
+      margin-left: auto;
+    }
+    #photo-flex  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 120px;
+    }
+    .photo {
+      max-width: 600px;
+      margin-top: 50px
+    }
+    .caption {
+      margin-top: 10px;
+      font-size: 23px;
+    }
+    @media (max-width: 768px) {
+      .photo {
+        max-width: 75%;
+        height: auto;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <div id="header">
+      <h1 class="text-center" id="title">Portraits</h1>
+      <div id="homeButton">
+        <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
+      </div>
+    </div>
+    <div id="photo-flex">
+      <img class="photo" src="./img/Portraits/1 Dagobah Soundsystem.jpg" alt="Dagobah Soundsystem">
+      <p class="caption">Dagobah Soundsystem</p>
+      <img class="photo" src="./img/Portraits/2 Anmar.jpg" alt="Anmar">
+      <p class="caption">Anmar</p>
+      <img class="photo" src="./img/Portraits/3 Anmar.jpg" alt="Anmar">
+      <p class="caption">Anmar</p>
+      <img class="photo" src="./img/Portraits/4 Alex.jpeg" alt="Alex">
+      <p class="caption">Alex</p>
+      <img class="photo" src="./img/Portraits/5 Roy Barbados.jpg" alt="Roy Barbados">
+      <p class="caption">Roy Barbados</p>
+      <img class="photo" src="./img/Portraits/6 Abz.jpg" alt="Abz">
+      <p class="caption">Abz</p>
+      <img class="photo" src="./img/Portraits/7 Cru.jpg" alt="Cru">
+      <p class="caption">Cru</p>
+      <img class="photo" src="./img/Portraits/8 Hamez.jpg" alt="Hamez">
+      <p class="caption">Hamez</p>
+    </div>
+  </main>
+</body>
+</html>
