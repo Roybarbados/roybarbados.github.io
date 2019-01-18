@@ -40,12 +40,12 @@
       font-size: 50px;
       grid-column-start: 2;
     }
-    #homeButton {
+    .homeButton {
       grid-column-start: 3;
       margin-left: auto;
     }
 
-    #community-text {
+    .community-text {
       max-width: 800px;
       font-size: 25px;
       text-align: center;
@@ -81,7 +81,21 @@
         max-width: 75%;
         height: auto;
       }
+      .homeButton {
+        display: none;
+      }
+      .community-text {
+        margin-top: 100px;
+      }
+      .mobileHomeButton {
+        display: block;
+      }
     }
+    @media screen and (min-width: 768px) {
+    .mobileHomeButton {
+      display: none;
+    }
+  }
 
   </style>
 
@@ -92,11 +106,14 @@
     <div id="page1">
       <div id="header">
         <h1 class="text-center" id="title">Community</h1>
-        <div id="homeButton">
+        <div class="homeButton">
           <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
         </div>
+        <div class="mobileHomeButton">
+          <a href="homepage.html"><img src="MobileHomeButton.png" alt="Home Button" style="position: absolute; top:0; right: 0;"/></a>
+        </div>
       </div>
-      <div id="community-text">
+      <div class="community-text">
         <p>Community is about capturing and documenting communities, specifically groups of young adults, in outwardly aggressive scenarios, usually involving themes of sex and depravity. Set out to capture how particular communities view themselves as part of a collective combining the candid style of documentary with an aggressive stylistic undertones.</p>
         <p>The work is conceptually ambitious with the images being shot forcefully to encapsulate the dilemmas and angst of young adult life and the trails and tribulations that accompany the demographic. This conceptual drive has helped shape the sound art piece using primal urges as the basis for the video and building upon this instinct with cognitive colours and movements.</p>
       </div>

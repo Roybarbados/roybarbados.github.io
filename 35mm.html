@@ -34,7 +34,7 @@
     font-size: 50px;
     grid-column-start: 2;
   }
-  #homeButton {
+  .homeButton {
     grid-column-start: 3;
     margin-left: auto;
   }
@@ -60,6 +60,17 @@
   @media screen and (max-width: 768px) {
     #photo-grid {
         grid-template-columns: 1fr;
+    }
+    .homeButton {
+        display: none;
+    }
+    .mobileHomeButton {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .mobileHomeButton {
+      display: none;
     }
   }
 
@@ -146,7 +157,7 @@
   }
 
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 768px){
       .modal-content {
           width: 100%;
       }
@@ -157,8 +168,11 @@
   <main>
     <div id="header">
       <h1 id="title">35mm</h1>
-      <div id="homeButton">
+      <div class="homeButton">
           <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
+      </div>
+      <div class="mobileHomeButton">
+        <a href="homepage.html"><img src="MobileHomeButton.png" alt="Home Button" style="position: absolute; top:0; right: 0;"/></a>
       </div>
     </div>
     <div id="photo-grid">
@@ -233,6 +247,19 @@
         <img class="photo" src="./img/35mm/8/6 Rubz.jpg" alt="Rubz">
         <img class="photo" src="./img/35mm/8/7 The Fox.jpeg" alt="The Fox">
         <img class="photo" src="./img/35mm/8/8 Home.jpg" alt="Home">
+        <img class="photo" src="./img/35mm/9/1 Nicholas.jpg" alt="Nicholas">
+        <img class="photo" src="./img/35mm/9/2 Ray-Keith.jpg" alt="Ray-Keith">
+        <img class="photo" src="./img/35mm/9/3 Roy.jpg" alt="Roy">
+        <img class="photo" src="./img/35mm/9/4 Tanning Roy.jpg" alt="Tanning Roy">
+        <img class="photo" src="./img/35mm/9/5 Deano and Roy.jpg" alt="Deano and Roy">
+        <img class="photo" src="./img/35mm/9/6 Home.jpg" alt="Home">
+        <img class="photo" src="./img/35mm/9/7 Naughy Daughty.jpg" alt="Naughty Daughty">
+        <img class="photo" src="./img/35mm/9/8 Et and Freshman.jpg" alt="Et and Freshman">
+        <img class="photo" src="./img/35mm/9/9 Freshman.jpg" alt="Fresh">
+        <img class="photo" src="./img/35mm/9/10 Clint.jpg" alt="Clint">
+        <img class="photo" src="./img/35mm/9/11 Fresh & Polish Dad.jpg" alt="Fresh & Polish Dad">
+        <img class="photo" src="./img/35mm/9/12 Poland Posse.jpg" alt="Poland Posse">
+
     </div>
 
     <!-- The Modal -->

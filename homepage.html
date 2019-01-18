@@ -41,14 +41,20 @@
       justify-content: space-around;
     }
 
-    #nav-list li {
+    #nav-list li, .mobile-nav li {
       display: inline;
       font-size: 20pt;
     }
 
-    #nav-list li a {
+    #nav-list li a, .mobile-nav li a {
       text-decoration: none;
       color: rgb(13, 164, 175);
+    }
+
+    .mobile-nav {
+      list-style-type: none;
+      display: none;
+      margin-top: 100px;
     }
 
     /* Center dropup menu */
@@ -81,7 +87,23 @@
       margin-left: auto;
       margin-right: auto;
     }
-
+    /* hide nav, display mobile nav on mobile */
+    @media (max-width: 768px) {
+      nav {
+        position: static;
+      }
+      #nav-list {
+        display: none;
+      }
+      .mobile-nav {
+        display: block;
+      }
+    }
+    @media (max-width: 468px) {
+      .mobile-nav {
+        margin-top: 200px;
+      }
+    }
   </style>
 </head>
 
@@ -101,18 +123,7 @@
   </main>
   <nav>
     <ul id="nav-list">
-      <li class="dropup">
-        <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Film
-          <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="community.html">Community</a></li>
-          <li><a href="film.html#metamorphosis">Metamorphosis</a></li>
-          <li><a href="film.html#second-chance">Second Chance</a></li>
-          <li><a href="film.html#sounds-of-war">Sounds of War</a></li>
-          <li><a href="film.html#carnival">The Carnival</a></li>
-        </ul>
-      </li>
+      <li><a href="film.html" class="menu-item">Film</a></li>
       <li class="dropup">
         <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Photography
           <span class="caret"></span>
@@ -133,6 +144,23 @@
         </div>
       </li>
     </ul>
+    <div class="mobile-nav">
+      <ul style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; justify-items: center; padding-left: 0px; grid-row-gap: 100px;">
+        <li><a href="film.html" class="menu-item">Film</a></li>
+        <li class="dropup">
+          <a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Photography
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="community.html">Community</a></li>
+            <li><a href="35mm.html">35mm</a></li>
+            <li><a href="portraits.html">Portraits</a></li>
+          </ul>
+        </li>
+        <li><a href="https://roybarbados.bandcamp.com/" class="menu-item" target="_blank">Music</a></li>
+        <li><a href="about.html" class="menu-item">About</a></li>
+      </ul>
+    </div>
   </nav>
 </body>
 

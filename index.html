@@ -23,17 +23,18 @@
 
   <script>
     $(document).ready(function () {
-      // var video = document.getElementById('video');
-      // video.addEventListener('click',function(){
-      //     video.play();
-      //     window.location.href = 'http://www.google.com';
-      // },false);
       $('#enter').click(function () {
         $('#enter').get(0).play();
         setTimeout(function () {
           window.location.href = 'homepage.html';
         }, 1300);
       });
+
+      window.onpageshow = function(event) {
+        if (event.persisted) {
+            window.location.reload() 
+        }
+      };
     });
   </script>
 

@@ -41,7 +41,7 @@
     color: teal;
     grid-column-start: 2;
   }
-  #homeButton {
+  .homeButton {
     grid-column-start: 3;
     margin-left: auto;
   }
@@ -49,6 +49,22 @@
     max-width: 1000px;
     width: 70%;
     margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    .homeButton {
+      display: none;
+    }
+    #title {
+      margin-bottom: 100px;
+    }
+    .mobileHomeButton {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .mobileHomeButton {
+      display: none;
+    }
   }
   </style>
 
@@ -58,16 +74,24 @@
   <main>
     <div id="header">
       <h1 id="title">Film</h1>
-      <div id="homeButton">
+      <div class="homeButton">
         <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
+      </div>
+      <div class="mobileHomeButton">
+        <a href="homepage.html"><img src="MobileHomeButton.png" alt="Home Button" style="position: absolute; top:0; right: 0;"/></a>
       </div>
     </div>
     <div id="metamorphosis">
       <div class="embed-responsive embed-responsive-16by9">
-      <iframe src="https://player.vimeo.com/video/148102254" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      <p><a href="https://vimeo.com/148102254">Metamorphosis</a> from <a href="https://vimeo.com/user25856586">Roy Barbados</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QsVcYVFNPg0" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
     </div>
     <h3 class="text-center">Metamorphosis</h3>
+    </div>
+    <div id="carnival" style="margin-top: 100px; margin-bottom:80px;">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XnPH6Et3uYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <h3 class="text-center">The Carnival</h3>
     </div>
     <div id="second-chance" style="margin-top: 100px;">
       <div class="embed-responsive embed-responsive-16by9">
@@ -80,12 +104,6 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/w4OtaZAtQHU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <h3 class="text-center">Sounds of War</h3>
-    </div>
-    <div id="carnival" style="margin-top: 100px; margin-bottom:80px;">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XnPH6Et3uYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-      <h3 class="text-center">The Carnival</h3>
     </div>
   </main>
 </body>

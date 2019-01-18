@@ -40,7 +40,7 @@
       font-size: 50px;
       grid-column-start: 2;
     }
-    #homeButton {
+    .homeButton {
       grid-column-start: 3;
       margin-left: auto;
     }
@@ -63,6 +63,9 @@
         max-width: 75%;
         height: auto;
       }
+      .homeButton {
+        display: none;
+      }
     }
   </style>
 
@@ -72,7 +75,7 @@
   <main>
     <div id="header">
       <h1 class="text-center" id="title">Portraits</h1>
-      <div id="homeButton">
+      <div class="homeButton">
         <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
       </div>
     </div>
@@ -93,6 +96,8 @@
       <p class="caption">Cru</p>
       <img class="photo" src="./img/Portraits/8 Hamez.jpg" alt="Hamez">
       <p class="caption">Hamez</p>
+      <img class="photo" src="./img/Portraits/9 Jacob.jpg" alt="Jacob">
+      <p class="caption">Jacob</p>
     </div>
   </main>
 </body>

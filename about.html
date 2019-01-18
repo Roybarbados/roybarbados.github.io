@@ -26,6 +26,7 @@
 
     body {
       font-family: 'belli', sans-serif;
+      margin-bottom: 20px;
     }
 
     main {
@@ -34,20 +35,19 @@
       text-align: center;
       display: grid;
       grid-template-columns: 1fr 1fr;
-
     }
-    #homeButton {
+    .homeButton {
       position: fixed;
       top: 0px;
       right: 0px;
     }
 
-    #about-img {
-      height: 100vh;
-      width: auto;
+    .about-img {
+      max-height: 100vh;
+      max-width: 50vw;
     }
 
-    #main-desc {
+    .main-desc {
       align-self: center;
     }
 
@@ -55,16 +55,61 @@
       text-decoration: none;
       color: rgb(13, 164, 175);
     }
+    @media (max-width: 1200px) {
+      main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+      }
+      .about-img {
+        justify-self: center;
+      }
+      .main-desc {
+        align-self: flex-start;
+      }
+    }
+    @media (max-width: 992px) {
+      main {
+        grid-template-rows: 7fr 3fr;
+      }
+    }
+    @media (max-width: 768px) {
+      .homeButton {
+        display: none;
+      }
+      .about-img {
+        align-self: center;
+      }
+      main {
+        grid-template-rows: 4fr 3fr;
+      }
+      .mobileHomeButton {
+        display: block;
+      }
+    }
+    @media (max-width: 336px) {
+      main {
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+    @media screen and (min-width: 768px) {
+    .mobileHomeButton {
+      display: none;
+    }
+  }
+
   </style>
 </head>
 
 <body>
   <main>
-    <div id="homeButton">
+    <div class="homeButton">
         <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
     </div>
-    <img id="about-img" src="img/roy.jpg" alt="Roy Barbados" />
-    <div id="main-desc">
+    <div class="mobileHomeButton">
+      <a href="homepage.html"><img src="MobileHomeButton.png" alt="Home Button" style="position: absolute; top:0; right: 0;"/></a>
+    </div>
+    <img class="about-img" src="img/roy.jpg" alt="Roy Barbados" />
+    <div class="main-desc">
       <p>Capturing and creating film, photography and music.</p>
       <br>
       <p>Roy creates visual soundscapes reflecting on the personal, the political and the
