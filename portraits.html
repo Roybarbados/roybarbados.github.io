@@ -66,6 +66,13 @@
       .homeButton {
         display: none;
       }
+      .mobileHomeButton {
+        display: block;
+      }
+    }
+    @media screen and (min-width: 768px) {
+    .mobileHomeButton {
+      display: none;
     }
   </style>
 
@@ -77,6 +84,9 @@
       <h1 class="text-center" id="title">Portraits</h1>
       <div class="homeButton">
         <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
+      </div>
+      <div class="mobileHomeButton">
+        <a href="homepage.html"><img src="MobileHomeButton.png" alt="Home Button" style="position: absolute; top:0; right: 0;"/></a>
       </div>
     </div>
     <div id="photo-flex">
