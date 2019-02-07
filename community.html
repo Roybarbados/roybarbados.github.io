@@ -72,8 +72,8 @@
       font-size: 23px;
     }
     @media (min-width: 468px) {
-      #page1 {
-        height: 100vh;
+      #page1, #page2 {
+        min-height: 100vh;
       }
     }
     @media (max-width: 992px) {
@@ -95,6 +95,9 @@
     .mobileHomeButton {
       display: none;
     }
+    .homeButton {
+      display: block;
+    }
   }
 
   </style>
@@ -105,7 +108,7 @@
   <main>
     <div id="page1">
       <div id="header">
-        <h1 class="text-center" id="title">Community</h1>
+        <h1 class="text-center" id="title" style="margin-top: 50px;">Community</h1>
         <div class="homeButton">
           <a href="homepage.html"><img src="homeButton.png" alt="Home Button" style="width: 250px;"/></a>
         </div>
@@ -114,11 +117,18 @@
         </div>
       </div>
       <div class="community-text">
-        <p>Community is about capturing and documenting communities, specifically groups of young adults, in outwardly aggressive scenarios, usually involving themes of sex and depravity. Set out to capture how particular communities view themselves as part of a collective combining the candid style of documentary with an aggressive stylistic undertones.</p>
-        <p>The work is conceptually ambitious with the images being shot forcefully to encapsulate the dilemmas and angst of young adult life and the trails and tribulations that accompany the demographic. This conceptual drive has helped shape the sound art piece using primal urges as the basis for the video and building upon this instinct with cognitive colours and movements.</p>
+        <p>Community is about capturing and documenting communities, specifically groups of young adults, in outwardly aggressive scenarios, usually involving themes of sex and depravity. Set out to capture how particular communities view themselves.</p>
+        <p>The work encapsulates the dilemmas and angst of young adult life and the trails and tribulations that accompany adulthood. This conceptual drive has helped shape the sound art piece using primal urges as the basis for the video and building upon this instinct with cognitive colours and movements.</p>
       </div>
     </div>
-    <div id=#page2>
+    <div id="page2">
+      <div id="community">
+        <div class="embed-responsive embed-responsive-16by9" style="margin-bottom:100px; margin-top: 100px;">
+          <iframe class="img-responsive" width="560" height="315" src="https://www.youtube.com/embed/3AtWmm4RE7g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div id=#page3>
       <div id="photo-flex">
         <img class="photo" src="./img/Community/2 Roy.jpg" alt="Roy">
         <p class="caption">Roy</p>
@@ -144,11 +154,6 @@
         <p class="caption">Tdog</p>
         <img class="photo" src="./img/Community/13 The Gang.jpg" alt="The Gang">
         <p class="caption">The Gang</p>
-        <div id="community">
-          <div class="embed-responsive embed-responsive-16by9" style="margin-bottom:20px; margin-top: 50px;">
-            <iframe class="img-responsive" width="560" height="315" src="https://www.youtube.com/embed/3AtWmm4RE7g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
       </div>
     </div>
   </main>
